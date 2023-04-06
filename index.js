@@ -5,15 +5,15 @@ function registrarUsuario() {
 
     usuario.nombre = prompt("Nombre:");
     usuario.apellido = prompt("Apellido:");
-    usuario.edad = Number(prompt("edad"));
-    usuario.email = prompt("Ingrese su correo para recibir las mejores ofertas!");
+    usuario.edad = Number(prompt("Edad"));
+    usuario.mail = prompt("Ingrese su correo para recibir las mejores ofertas!");
 
     alert("Estos son tus datos:\n \n" +
         "Nombre: " + usuario.nombre + "\n" +
         "Apellido: " + usuario.apellido + "\n" +
         "Edad: " + usuario.edad + "\n" +
-        "Correo electrónico: " + usuario.email);
-    confirm ("es correcto? \n Acepta si es correcto de lo contrario cancela y vuelve a registrarte.")
+        "Correo electrónico: " + usuario.mail);
+    confirm ("Es correcto? \n Acepta si es correcto de lo contrario cancela y vuelve a registrarte.")
 }
 
 registrarUsuario();
