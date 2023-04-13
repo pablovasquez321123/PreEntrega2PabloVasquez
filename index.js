@@ -75,7 +75,7 @@ while (seleccion !== "no") {
             continue; 
     }
 
-    let unidades = parseInt(prompt("Indique cuántas unidades quiere agregar:"));
+    let unidades = Number(prompt("Indique cuántas unidades quiere agregar:"));
 
 
     if (isNaN(unidades) || unidades <= 0) {
@@ -83,7 +83,7 @@ while (seleccion !== "no") {
         continue; 
     }
 
-    carrito.push({ producto, precio });
+    carrito.push({ producto, unidades, precio });
     console.log(carrito);
 
     seleccion = prompt("¿Quiere seguir comprando? (sí o no)");
@@ -96,7 +96,7 @@ if (carrito.length === 0) {
 
     alert("Detalle de la compra:");
     carrito.forEach((producto) => {
-        alert(`Producto: ${producto.producto}, Unidades: ${producto.unidades}, Total a pagar por producto: $${producto.unidades * producto.precio}`);
+        alert(`Producto: ${producto.producto}\nUnidades: ${producto.unidades}\nTotal a pagar por producto: $${producto.unidades * producto.precio}`);
     });
 
 
